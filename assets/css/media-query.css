@@ -1,0 +1,123 @@
+/*Celular*/
+/*---- Index ----*/
+@media screen and (max-width: 800px) {
+  .social-icons {
+    justify-self: center;
+    margin-right: 0px;
+  }
+
+  .nav-logo img {
+    width: 150px;
+    margin-left: 0px;
+  }
+
+  .nav-logo {
+    margin-left: 10px;
+  }
+
+  .nav-linK {
+    margin-right: 20px;
+  }
+
+  .pdpagina p {
+    font-size: 13px;
+  }
+
+  .main-container__text p {
+    text-align: center;
+    font-size: 10px;
+  }
+
+  /*--- Blogs ---*/
+
+  .news {
+    padding: 20px;
+  }
+
+  .news-content {
+    display: block;
+  }
+
+  .news-content h3 {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .news-content img {
+    width: 100%;
+  }
+
+  /*post blogs*/
+
+  .posts {
+    padding: 20px;
+  }
+
+  .post-blog {
+    max-width: 100%;
+  }
+
+  .post-blog img {
+    width: 100%;
+  }
+
+  .post-blog h4 {
+    margin: 20px 0;
+  }
+
+  .post-blog p {
+    margin-bottom: 35px;
+  }
+
+  /*--- Blog ---*/
+
+  .main-blog {
+    padding: 20px;
+  }
+
+  .main-blog__content {
+    padding: 10px;
+  }
+
+  .main-blog__content img {
+    width: 100%;
+    height: 300px;
+    padding: 5px;
+  }
+
+  .contact{
+    display: grid;
+    margin: 0px;
+}
+.section-contact{
+    padding: 10px;
+    display: grid;
+}
+
+/* --- Perfil --- */
+
+.main-profile__content img {
+    margin-bottom: 10px;
+  }
+  .main-profile__content {
+    display: block;
+    padding:  25px;
+  }
+  .proyectos-article {
+    padding: 20px;
+  }
+  
+  .proyectos-article {
+    padding: 20px;
+  }
+  
+  .main-profile__proyectos {
+    max-width: 90%;
+    margin-bottom: 10px;
+  }
+  .main-profile h4 {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+}
