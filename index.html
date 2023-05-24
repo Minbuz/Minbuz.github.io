@@ -11,25 +11,24 @@
     <link rel="stylesheet" href="assets/css/media-query.css" />
   </head>
 
-  <body>
+  <body class="body">
     <header class="header">
-      <div class="divAlt"></div>
-      <nav class="nav">
-        <div class="nav-logo">
-          <a href="index.html">
-            <img src="assets/img/logo.png" alt="logo de pagina" />
-          </a>
-        </div>
-        <div>
-          <ul>
-            <li><a href="sobremi.html">Acerca mi</a></li>
-            <li><a href="estudio.html">Educacion</a></li>
-            <li><a href="portafolio.html">Portafolio</a></li>
-            <li><a href="contacto.html">Contactame</a></li>
-          </ul>
-        </div>
-      </nav>
-      <div class="divBaj"></div>
+      <div class="div-header">
+        <nav class="nav">
+          <div class="nav-logo">
+            <a class="img-logo" href="index.html">
+              <img src="./assets/img/JuanRoman.png" alt="logo de pagina" />
+            </a>
+          </div>
+          <div>
+            <ul>
+              <li><a href="sobremi.html">Acerca mi</a></li>
+              <li><a href="estudio.html">Educacion</a></li>
+              <li><a href="portafolio.html">Portafolio</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
     <main class="home-main-i">
       <div class="main-container-i">
@@ -49,7 +48,7 @@
             </div>
             <div>
               <p class="p-datos">Email</p>
-              <p class="p-resultado">Juan.andres.roman.duran@gmail.com</p>
+              <p class="p-resultado">Jua.anrodu@gmail.com</p>
             </div>
             <div>
               <p class="p-datos">Fono</p>
@@ -89,3 +88,22 @@
     </main>
   </body>
 </html>
+
+<script>
+  const menu = document.querySelector(".div-header");
+  const menuItems = menu.querySelectorAll("nav");
+
+  menu.addEventListener("mouseout", () => {
+    for (let i = 0; i < menuItems.length; i++) {
+      menuItems[i].style.transform = "translateY(-40px)";
+      menuItems[i].style.opacity = "0";
+    }
+  });
+
+  menu.addEventListener("mouseover", () => {
+    for (let i = 0; i < menuItems.length; i++) {
+      menuItems[i].style.transform = "translateY(0px)";
+      menuItems[i].style.opacity = "1";
+    }
+  });
+</script>

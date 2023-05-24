@@ -11,29 +11,28 @@
     <link rel="stylesheet" href="assets/css/media-query.css" />
   </head>
 
-  <body class="home-body">
+  <body class="body">
     <header class="header">
-      <div class="divAlt"></div>
-      <nav class="nav">
-        <div class="nav-logo">
-          <a href="index.html">
-            <img src="assets/img/logo.png" alt="logo de pagina" />
-          </a>
-        </div>
-        <div>
-          <ul>
-            <li><a href="sobremi.html">Acerca mi</a></li>
-            <li><a href="estudio.html">Educacion</a></li>
-            <li><a href="portafolio.html">Portafolio</a></li>
-            <li><a href="contacto.html">Contactame</a></li>
-          </ul>
-        </div>
-      </nav>
-      <div class="divBaj"></div>
+      <div class="div-header">
+        <nav class="nav">
+          <div class="nav-logo">
+            <a href="index.html">
+              <img src="./assets/img/JuanRoman.png" alt="logo de pagina" />
+            </a>
+          </div>
+          <div>
+            <ul>
+              <li><a href="sobremi.html">Acerca mi</a></li>
+              <li><a href="estudio.html">Educacion</a></li>
+              <li><a href="portafolio.html">Portafolio</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
     <main class="home-main">
       <div class="main-container">
-        <div class="div-1ac">
+        <article class="div-1ac">
           <h2 class="h2-1ac">Los Videojuegos</h2>
           <div class="divInt-1ac">
             <p class="p-1ac">
@@ -48,9 +47,9 @@
             </p>
           </div>
           <img class="img-1ac" src="assets/img/videojuegos.jpeg" alt="" />
-        </div>
-        <hr>
-        <div class="div-2ac">
+        </article>
+        <hr />
+        <article class="div-2ac">
           <img class="img-2ac" src="assets/img/machu.jpg" alt="" />
           <h2 class="h2-2ac">Viajar</h2>
           <div class="divInt-2ac">
@@ -62,9 +61,9 @@
               tengan.
             </p>
           </div>
-        </div>
-        <hr>
-        <div class="div-1ac">
+        </article>
+        <hr />
+        <article class="div-1ac">
           <h2 class="h2-3ac">La Venary</h2>
           <div class="divInt-3ac">
             <p class="p-3ac">
@@ -76,8 +75,28 @@
             </p>
           </div>
           <img class="img-3ac" src="assets/img/venary.png" alt="" />
-        </div>
+        </article>
+        <hr />
       </div>
     </main>
   </body>
 </html>
+
+<script>
+  const menu = document.querySelector(".div-header");
+  const menuItems = menu.querySelectorAll("nav");
+
+  menu.addEventListener("mouseout", () => {
+    for (let i = 0; i < menuItems.length; i++) {
+      menuItems[i].style.transform = "translateY(-40px)";
+      menuItems[i].style.opacity = "0";
+    }
+  });
+
+  menu.addEventListener("mouseover", () => {
+    for (let i = 0; i < menuItems.length; i++) {
+      menuItems[i].style.transform = "translateY(0px)";
+      menuItems[i].style.opacity = "1";
+    }
+  });
+</script>
