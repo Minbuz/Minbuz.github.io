@@ -50,6 +50,11 @@ a {
   margin-top: -30px;
   margin-left: 80px;
   width: 200px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-logo:hover {
+  transform: scale(1.2);
 }
 
 .nav-logo:active {
@@ -166,7 +171,6 @@ li:active {
 
 .main-presentacion {
   display: grid;
-  background-color: white;
   height: 100%;
   width: 100%;
   position: relative;
@@ -174,8 +178,16 @@ li:active {
   align-items: center;
   grid-template-columns: 0.05fr 1fr 1.5fr 0.05fr;
   grid-template-rows: 0.1fr 4fr 0.3fr;
+}
+
+.main-presentacion-op {
+  position: absolute;
+  background-color: #ffffff;
+  height: 100%;
+  width: 100%;
   border-radius: 10px;
   border-style: solid;
+  opacity: 70%;
 }
 
 .imghello {
@@ -225,13 +237,21 @@ li:active {
 
 .datosP {
   position: relative;
-  width: 700px;
+  width: 650px;
   height: 300px;
   grid-column: 3;
   grid-row: 2;
   font-size: 22px;
-  padding: 0;
+  padding: 20px 0px;
   margin-top: 70px;
+  margin-left: 50px;
+  background-color: #a0a0a0a8;
+  border-radius: 10px;
+}
+
+.dato-intp {
+  margin-left: -20px;
+  font-family: sans-serif;
 }
 
 .p-datos {
@@ -259,13 +279,11 @@ li:active {
 }
 
 .imgM {
-  display: flex;
-  position: absolute;
   margin: 10px 0px 40px 0px;
-  width: 500px;
-  height: auto;
+  width: 100%;
   grid-column: 2;
   grid-row: 2;
+  align-content: center;
   border-radius: 10px;
   border-style: solid;
 }
@@ -279,6 +297,7 @@ li:active {
   align-items: center;
   justify-content: space-between;
   justify-self: center;
+  margin-left: -60px;
 }
 
 .social-icons img {
@@ -293,7 +312,7 @@ li:active {
 
 .fmain {
   display: grid;
-  background-color: #b1d73d;
+  background-color: #3473a9;
   height: 70px;
   width: 100%;
   position: absolute;
@@ -342,7 +361,7 @@ li:active {
   grid-column: 1;
   grid-row: 1;
   margin: 200px 20px;
-  padding: 20px;
+  height: 150px;
   background-color: #27262c;
   border-radius: 10px;
 }
@@ -350,22 +369,25 @@ li:active {
 .p-1ac {
   color: white;
   text-align: justify;
+  padding: 20px;
 }
 
 .img-1ac {
   display: flex;
   width: 600px;
   height: 600px;
-  margin: 130px 20px;
+  margin: 130px 20px 30px;
   grid-column: 2;
   grid-row: 1;
+  border-radius: 10px;
+  border-style: solid;
 }
 
 .divInt-2ac {
   grid-row: 2;
   grid-column: 2;
+  height: 200px;
   margin: 200px 20px;
-  padding: 20px;
   background-color: #27262c;
   border-radius: 10px;
 }
@@ -382,22 +404,25 @@ li:active {
 .p-2ac {
   color: white;
   text-align: justify;
+  padding: 20px;
 }
 
 .img-2ac {
   display: flex;
   width: 600px;
   height: 500px;
-  margin: 130px 20px;
+  margin: 130px 20px 30px;
   grid-column: 1;
   grid-row: 2;
+  border-radius: 10px;
+  border-style: solid;
 }
 
 .divInt-3ac {
   grid-row: 3;
   grid-column: 1;
   margin: 200px 20px;
-  padding: 20px;
+  height: 150px;
   background-color: #27262c;
   border-radius: 10px;
 }
@@ -414,15 +439,18 @@ li:active {
 .p-3ac {
   color: white;
   text-align: justify;
+  padding: 20px;
 }
 
 .img-3ac {
   display: flex;
   width: 600px;
   height: 600px;
-  margin: 130px 20px;
+  margin: 130px 20px 30px;
   grid-column: 2;
   grid-row: 3;
+  border-radius: 10px;
+  border-style: solid;
 }
 
 /*Educacion*/
@@ -500,12 +528,14 @@ li:active {
   background-image: url("../img/blog.gif"); /* Ruta de la imagen que deseas recortar */
   background-position: 0px -48px;
   background-size: 500px 458px;
+  border-radius: 10px;
+  border-style: solid;
 }
 
 .Utilizado {
   margin: 40px 20px;
   width: 26%;
-  background-color: #b1d73d;
+  background-color: #4996da;
   border-radius: 10px;
   display: inline-block;
   cursor: default;
@@ -522,7 +552,7 @@ li:active {
 .button-blog1 {
   grid-row: 1;
   grid-column: 2;
-  background-color: #b1d73d;
+  background-color: #4996da;
   width: 200px;
   height: 40px;
   margin: 40px 160px 50px;
@@ -564,6 +594,9 @@ li:active {
   margin: 130px 20px 50px;
   background-image: url("../img/votantes.png");
   background-repeat: no-repeat;
+  background-size: 580px 400px;
+  border-radius: 10px;
+  border-style: solid;
 }
 
 .div-button-votante {
@@ -577,29 +610,35 @@ li:active {
 }
 
 .button-blog {
-  background-color: #b1d73d;
+  background-color: #3473a9;
   font-size: 18px;
   font-weight: bold;
   color: black;
   padding: 10px 30px;
   margin: 10px 200px 10px;
+  border-radius: 6px;
+  border: 2px solid transparent;
+  transition: background-color 0.3s ease;
 }
 
 .button-vot {
-  background-color: #b1d73d;
+  background-color: #3473a9;
   font-size: 18px;
   font-weight: bold;
   color: black;
   padding: 10px 30px;
   margin: 10px 250px 10px;
+  border-radius: 6px;
+  border: 2px solid transparent;
+  transition: background-color 0.3s ease;
 }
 
-.button-blog2:hover {
-  animation: spring 300ms ease-out;
-  text-shadow: 0 -1px 0 #ffffff;
-  font-weight: bold;
+.button-blog:hover {
+  text-shadow: 0 -1px 0 #000000;
+  background-color: #4996da;
 }
 
-.button-blog2:active {
-  transform: translateY(4px);
+.button-vot:hover {
+  text-shadow: 0 -1px 0 #000000;
+  background-color: #4996da;
 }
