@@ -116,6 +116,36 @@
     margin: 10px 250px 10px;
   }
 }
-/*720 x 1280*/
-@media screen and (max-width: 720px) {
+/* 1366 x 768*/
+@media screen and (max-width: 1366px) {
+  /*index*/
+
+  .datosP {
+    margin-top: 100px;
+    margin-left: 10px;
+  }
+
+  /*educacion*/
+
+  .div-p p {
+    margin: 30px 20px;
+    color: white;
+    padding: 20px;
+    background-color: #27262c;
+    border-radius: 10px;
+  }
+
+  .table-1 {
+    margin-top: 0px;
+  }
+
+  .hab {
+    width: 80%;
+  }
+
+  .div-est1 {
+    padding: 5px;
+  }
+
+  
 }
