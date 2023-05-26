@@ -121,8 +121,7 @@
   /*index*/
 
   .datosP {
-    margin-top: 100px;
-    margin-left: 10px;
+    margin: 130px 0px 0px 10px;
   }
 
   /*educacion*/
@@ -146,6 +145,4 @@
   .div-est1 {
     padding: 5px;
   }
-
-  
 }
