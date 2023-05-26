@@ -41,7 +41,7 @@
           <div class="datosP">
             <div class="dato-intp">
               <p class="p-datos">Edad</p>
-              <p class="p-resultado">26</p>
+              <p class="p-resultado" id="edad"></p>
             </div>
             <div class="dato-intp">
               <p class="p-datos">Ubicacion</p>
@@ -107,4 +107,18 @@
       menuItems[i].style.opacity = "1";
     }
   });
+
+  function calcularEdad(fechaNacimiento) {
+    var hoy = new Date();
+    var cumpleanos = new Date(fechaNacimiento);
+    var edad = hoy.getFullYear() - cumpleanos.getFullYear();
+    var mes = hoy.getMonth() - cumpleanos.getMonth();
+    if (mes < 0 || (mes === 0 && hoy.getDate() < cumpleanos.getDate())) {
+      edad--;
+    }
+    return edad;
+  }
+  var fechaNacimiento = "1996-08-05"; // Formato AAAA-MM-DD
+  var edad = calcularEdad(fechaNacimiento);
+  document.getElementById("edad").textContent = edad;
 </script>

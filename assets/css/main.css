@@ -155,7 +155,6 @@ li:active {
   display: grid;
   height: 100%;
   grid-template-columns: 0.7fr 4fr 0.7fr;
-  overflow-y: scroll;
 }
 
 .main-container {
@@ -446,6 +445,16 @@ li:active {
 
 /*Educacion*/
 
+.hab {
+  color: white;
+  margin: 40px auto;
+  text-align: center;
+  font-size: 47px;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  border-radius: 20px;
+  border-style: ridge;
+}
+
 .div-p p {
   margin: 100px 20px;
   color: white;
@@ -456,16 +465,6 @@ li:active {
 
 .table-1 {
   margin-top: 100px;
-}
-
-.hab {
-  color: white;
-  margin: 40px auto;
-  text-align: center;
-  font-size: 47px;
-  border-bottom: 1px solid rgb(255, 255, 255);
-  border-radius: 20px;
-  border-style: ridge;
 }
 
 .div-est1 {
