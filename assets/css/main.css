@@ -195,7 +195,6 @@ li:active {
   top: 0;
   position: absolute;
   width: 200px;
-  height: auto;
   grid-column: 3;
   grid-row: 2;
 }
@@ -236,9 +235,8 @@ li:active {
 }
 
 .datosP {
-  position: relative;
-  width: 650px;
-  height: 300px;
+  width: 90%;
+  height: 40%;
   grid-column: 3;
   grid-row: 2;
   font-size: 22px;
@@ -283,7 +281,8 @@ li:active {
   width: 100%;
   grid-column: 2;
   grid-row: 2;
-  align-content: center;
+  display: block;
+  margin: auto;
   border-radius: 10px;
   border-style: solid;
 }
@@ -306,14 +305,10 @@ li:active {
   display: flex;
 }
 
-.cv {
-  right: 0;
-}
-
 .fmain {
   display: grid;
   background-color: #3473a9;
-  height: 70px;
+  margin: auto;
   width: 100%;
   position: absolute;
   bottom: 0;
@@ -360,8 +355,7 @@ li:active {
 .divInt-1ac {
   grid-column: 1;
   grid-row: 1;
-  margin: 200px 20px;
-  height: 150px;
+  margin: 200px 20px auto;
   background-color: #27262c;
   border-radius: 10px;
 }
@@ -374,9 +368,9 @@ li:active {
 
 .img-1ac {
   display: flex;
-  width: 600px;
-  height: 600px;
-  margin: 130px 20px 30px;
+  width: 90%;
+  height: auto;
+  margin: 120px auto 0px;
   grid-column: 2;
   grid-row: 1;
   border-radius: 10px;
@@ -386,8 +380,7 @@ li:active {
 .divInt-2ac {
   grid-row: 2;
   grid-column: 2;
-  height: 200px;
-  margin: 200px 20px;
+  margin: 200px 20px auto;
   background-color: #27262c;
   border-radius: 10px;
 }
@@ -409,9 +402,9 @@ li:active {
 
 .img-2ac {
   display: flex;
-  width: 600px;
-  height: 500px;
-  margin: 130px 20px 30px;
+  width: 90%;
+  height: auto;
+  margin: 120px auto 0px;
   grid-column: 1;
   grid-row: 2;
   border-radius: 10px;
@@ -421,8 +414,7 @@ li:active {
 .divInt-3ac {
   grid-row: 3;
   grid-column: 1;
-  margin: 200px 20px;
-  height: 150px;
+  margin: 200px 20px auto;
   background-color: #27262c;
   border-radius: 10px;
 }
@@ -444,9 +436,9 @@ li:active {
 
 .img-3ac {
   display: flex;
-  width: 600px;
-  height: 600px;
-  margin: 130px 20px 30px;
+  width: 90%;
+  height: auto;
+  margin: 120px auto 0px;
   grid-column: 2;
   grid-row: 3;
   border-radius: 10px;
@@ -464,7 +456,7 @@ li:active {
 }
 
 .table-1 {
-  margin-top: 120px;
+  margin-top: 100px;
 }
 
 .hab {
@@ -498,7 +490,6 @@ li:active {
 .h2-1po {
   font-size: 34px;
   margin-top: 100px;
-  margin-left: 20px;
   grid-column: 1;
   grid-row: 1;
   color: white;
@@ -507,9 +498,8 @@ li:active {
 .divInt-1po {
   grid-column: 1;
   grid-row: 1;
-  margin: 200px 20px;
+  margin: auto 0px;
   padding: 20px;
-  height: 170px;
   background-color: #27262c;
   border-radius: 10px;
 }
@@ -522,7 +512,7 @@ li:active {
 .img-1po {
   width: 500px;
   height: 400px;
-  margin: 130px 20px 50px;
+  margin: 130px auto 50px;
   grid-column: 2;
   grid-row: 1;
   background-image: url("../img/blog.gif"); /* Ruta de la imagen que deseas recortar */
@@ -549,23 +539,6 @@ li:active {
   justify-content: center;
 }
 
-.button-blog1 {
-  grid-row: 1;
-  grid-column: 2;
-  background-color: #4996da;
-  width: 200px;
-  height: 40px;
-  margin: 40px 160px 50px;
-}
-
-.button-blog1 a {
-  padding: 10px 20px;
-  text-decoration: none;
-  color: black;
-  font-size: 18px;
-  font-weight: bold;
-}
-
 .h2-2po {
   grid-column: 2;
   grid-row: 1;
@@ -577,7 +550,7 @@ li:active {
 .divInt-2po {
   grid-row: 1;
   grid-column: 2;
-  margin: 200px 20px;
+  margin: auto 20px;
   padding: 20px;
   background-color: #27262c;
   border-radius: 10px;
@@ -615,7 +588,7 @@ li:active {
   font-weight: bold;
   color: black;
   padding: 10px 30px;
-  margin: 10px 200px 10px;
+  margin: auto 230px;
   border-radius: 6px;
   border: 2px solid transparent;
   transition: background-color 0.3s ease;
@@ -627,7 +600,7 @@ li:active {
   font-weight: bold;
   color: black;
   padding: 10px 30px;
-  margin: 10px 250px 10px;
+  margin: auto 250px;
   border-radius: 6px;
   border: 2px solid transparent;
   transition: background-color 0.3s ease;
