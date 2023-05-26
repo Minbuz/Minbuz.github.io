@@ -119,12 +119,20 @@
 /* 1366 x 768*/
 @media screen and (max-width: 1366px) {
   /*index*/
+  .home-main-i {
+    margin-top: -30px;
+  }
 
   .datosP {
-    margin: 130px 0px 0px 10px;
+    margin-top: 130px;
+    margin-left: 10px;
+    height: 45%;
   }
 
   /*educacion*/
+  .main-container {
+    margin-top: -20px;
+  }
 
   .div-p p {
     margin: 30px 20px;
@@ -144,5 +152,10 @@
 
   .div-est1 {
     padding: 5px;
+  }
+
+  /*portafolio*/
+  .div-1po {
+    margin-top: 20px;
   }
 }
