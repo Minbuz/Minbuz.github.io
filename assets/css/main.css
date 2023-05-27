@@ -38,18 +38,109 @@ a {
 
 /*HEADER*/
 
+/*menu*/
+.menu-checkbox {
+  position: fixed;
+  margin-top: 54px;
+  margin-right: 20px;
+  right: 0;
+  z-index: 3;
+}
+
+.menuc {
+  width: 50px;
+  height: 100px;
+}
+
+#menu-check {
+  display: none;
+}
+#menu-check + label {
+  cursor: pointer;
+  display: inline-block;
+}
+.btn-menu {
+  width: 40px;
+  height: 40px;
+  border: 1px solid white;
+  position: relative;
+}
+.btn-menu > div {
+  position: absolute;
+  width: 60%;
+  height: 10%;
+  left: 20%;
+  background-color: white;
+  border-radius: 3px;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.stick1 {
+  top: 22%;
+}
+.stick2 {
+  top: 45%;
+}
+.stick3 {
+  bottom: 22%;
+}
+#menu-check:checked + label .stick1 {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: 45%;
+  width: 70%;
+  left: 15%;
+}
+#menu-check:checked + label .stick2 {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  top: 45%;
+  width: 70%;
+  left: 15%;
+}
+#menu-check:checked + label .stick3 {
+  height: 0;
+}
+
+/*----------------------*/
 .nav {
-  margin-top: 10px;
+  margin-top: 30px;
   display: grid;
   grid-template-columns: 0.3fr 2fr;
   height: 130px;
-  transition: all 1s;
+  transition: ease 1s;
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+}
+
+.nav-back-i {
+  margin-top: 0px;
+  position: fixed;
+  height: 130px;
+  background-color: #27262c;
+  opacity: 70%;
+  height: 100px;
+  width: 100%;
+  z-index: -1;
+}
+.nav-back {
+  margin-top: 30px;
+  position: fixed;
+  height: 130px;
+  background-color: #27262c;
+  opacity: 70%;
+  height: 100px;
+  width: 100%;
+  z-index: -1;
 }
 
 .nav-logo img {
-  margin-top: -30px;
+  margin-top: -50px;
   margin-left: 80px;
   width: 200px;
+  opacity: none;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -66,7 +157,7 @@ a {
 ul {
   display: flex;
   width: 100%;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-left: 50px;
   max-width: 820px;
   align-items: center;
@@ -136,7 +227,7 @@ li:active {
   display: grid;
   height: 100%;
   grid-template-columns: 1fr 4fr 1fr;
-  grid-template-rows: 0.2fr 4fr 1fr;
+  grid-template-rows: 1.1fr 4fr 0.5fr;
   position: fixed;
 }
 
@@ -164,6 +255,8 @@ li:active {
   height: auto;
   position: relative;
   padding-bottom: 200px;
+  padding-top: 130px;
+  z-index: -2;
 }
 
 /*presentacion*/
@@ -454,7 +547,6 @@ li:active {
   border-radius: 20px;
   border-style: ridge;
 }
-
 .div-p p {
   margin: 100px 20px;
   color: white;

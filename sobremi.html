@@ -14,9 +14,20 @@
   <body class="body">
     <header class="header">
       <div class="div-header">
+        <div class="menu-checkbox">
+          <input class="menuc" type="checkbox" id="menu-check" />
+          <label for="menu-check">
+            <div class="btn-menu">
+              <div class="stick1"></div>
+              <div class="stick2"></div>
+              <div class="stick3"></div>
+            </div>
+          </label>
+        </div>
         <nav class="nav">
+          <div class="nav-back-i"></div>
           <div class="nav-logo">
-            <a href="index.html">
+            <a class="img-logo" href="index.html">
               <img src="./assets/img/JuanRoman.png" alt="logo de pagina" />
             </a>
           </div>
@@ -85,18 +96,29 @@
 <script>
   const menu = document.querySelector(".div-header");
   const menuItems = menu.querySelectorAll("nav");
-
-  menu.addEventListener("mouseout", () => {
+  var estado = true;
+  if (window.innerWidth < 1366) {
     for (let i = 0; i < menuItems.length; i++) {
       menuItems[i].style.transform = "translateY(-40px)";
       menuItems[i].style.opacity = "0";
+      estado = false;
     }
-  });
+  }
+  function toggleMenu() {
+    if (estado === false) {
+      for (let i = 0; i < menuItems.length; i++) {
+        menuItems[i].style.transform = "translateY(0px)";
+        menuItems[i].style.opacity = "1";
+        estado = true;
+      }
+    } else {
+      for (let i = 0; i < menuItems.length; i++) {
+        menuItems[i].style.transform = "translateY(-40px)";
+        menuItems[i].style.opacity = "0";
+        estado = false;
+      }
+    }
+  }
 
-  menu.addEventListener("mouseover", () => {
-    for (let i = 0; i < menuItems.length; i++) {
-      menuItems[i].style.transform = "translateY(0px)";
-      menuItems[i].style.opacity = "1";
-    }
-  });
+  document.getElementById("menu-check").addEventListener("click", toggleMenu);
 </script>
