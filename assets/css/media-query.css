@@ -205,9 +205,6 @@
 
   /*Main index*/
 
-  .body {
-    background-repeat: repeat;
-  }
 
   .home-main-i {
     margin-top: 100px;
@@ -979,7 +976,7 @@
     font-size: 25px;
     margin: 65px 0px 0px;
     grid-row: 1;
-    background-color: blue;
+    background-color: red;
   }
 
   .img-1po {
