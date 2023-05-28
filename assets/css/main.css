@@ -107,7 +107,6 @@ a {
   margin-top: 30px;
   display: grid;
   grid-template-columns: 0.3fr 2fr;
-  height: 130px;
   transition: ease 1s;
   height: 100px;
   width: 100%;
@@ -118,17 +117,6 @@ a {
 .nav-back-i {
   margin-top: 0px;
   position: fixed;
-  height: 130px;
-  background-color: #27262c;
-  opacity: 70%;
-  height: 100px;
-  width: 100%;
-  z-index: -1;
-}
-.nav-back {
-  margin-top: 30px;
-  position: fixed;
-  height: 130px;
   background-color: #27262c;
   opacity: 70%;
   height: 100px;
@@ -137,9 +125,9 @@ a {
 }
 
 .nav-logo img {
-  margin-top: -50px;
+  margin-top: -17px;
   margin-left: 80px;
-  width: 200px;
+  width: 160px;
   opacity: none;
   transition: transform 0.3s ease-in-out;
 }
@@ -563,6 +551,10 @@ li:active {
   padding: 10px;
   background-color: #27262c;
   border-radius: 10px;
+}
+
+.div-est1 img {
+  margin: 10px;
 }
 
 /*Portafolio*/
