@@ -205,7 +205,6 @@
 
   /*Main index*/
 
-
   .home-main-i {
     margin-top: 100px;
     grid-template-columns: 0.2fr 4fr 0.2fr;
@@ -465,11 +464,6 @@
   }
 
   /*Main index*/
-
-  .body {
-    background-size: cover;
-    background-repeat: repeat;
-  }
 
   .home-main-i {
     margin-top: 80px;
@@ -786,11 +780,6 @@
   }
 
   /*Main index*/
-
-  .body {
-    background-size: cover;
-    background-repeat: repeat;
-  }
 
   .home-main-i {
     margin-top: 80px;
