@@ -781,6 +781,10 @@
 
   /*Main index*/
 
+  .body {
+    background-repeat: repeat;
+  }
+
   .home-main-i {
     margin-top: 80px;
     grid-template-columns: 0.2fr 5fr 0.2fr;
@@ -965,7 +969,7 @@
     font-size: 25px;
     margin: 65px 0px 0px;
     grid-row: 1;
-    background-color: red;
+    background-color: blue;
   }
 
   .img-1po {
