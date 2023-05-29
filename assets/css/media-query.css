@@ -176,7 +176,6 @@
   }
 }
 
-
 /*393 x 873*/
 @media screen and (max-width: 393px) {
   .menu-checkbox {
@@ -198,6 +197,7 @@
     margin-top: 2px;
     margin-left: 3px;
     width: 70px;
+    background-color: chartreuse;
   }
 
   .nav-back-i {
