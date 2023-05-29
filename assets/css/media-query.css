@@ -179,67 +179,37 @@
 @media screen and (max-width: 1080px) {
   .menu-checkbox {
     display: block;
-    margin-top: 20px;
-    margin-right: 15px;
-  }
-
-  .btn-menu {
-    width: 100px;
-    height: 100px;
   }
 
   .nav {
-    margin-top: 15px;
+    margin-top: 20px;
+    transition: all 1s;
   }
 
   .nav-logo img {
-    margin-top: 0px;
-    margin-left: 13px;
-    width: 150px;
-    background-color: blue;
-  }
-
-  .nav-back-i {
-    margin-top: 10px;
-    height: 110px;
+    margin-top: -50px;
+    margin-left: -10px;
+    width: 200px;
+    background-color: red;
   }
 
   /*Menu*/
 
   ul {
-    margin-top: 28px;
-    margin-left: 20px;
+    margin-top: 20px;
+    margin-left: -10px;
   }
   li {
-    margin-left: -10px;
-    padding: 10px 15px;
-    font-size: 30px;
-  }
-
-  li:hover {
-    border-bottom: 1px solid white;
-    border-radius: 4px;
-    padding: 1px;
-  }
-
-  li:hover:before {
-    content: "";
-  }
-
-  li:hover:after {
-    content: "";
+    padding: 10px 5px;
+    font-size: 20px;
   }
 
   /*Main index*/
 
-  .body {
-    background-repeat: repeat;
-  }
-
   .home-main-i {
-    margin-top: 300px;
-    grid-template-columns: 0.2fr 5fr 0.2fr;
-    grid-template-rows: 1fr 4fr 0.5fr;
+    margin-top: 100px;
+    grid-template-columns: 0.2fr 4fr 0.2fr;
+    grid-template-rows: 0.3fr 4fr 0.6fr;
   }
 
   /*Main*/
@@ -248,55 +218,45 @@
     grid-template-columns: 0.2fr 4fr 0.2fr;
   }
 
-  .main-container {
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-
   /*presentacion*/
 
   .main-presentacion {
-    grid-template-columns: 0.3fr 5fr 0.3fr;
-    grid-template-rows: 0.1fr 0.8fr 1.5fr 1.5fr 0.36fr;
+    grid-template-columns: 0.5fr 4fr 0.5fr;
+    grid-template-rows: 0.1fr 1fr 2fr 1.5fr 0.3fr;
   }
 
   .imghello {
-    position: absolute;
-    margin: 10px 30px 0px 0px;
-    width: 100px;
+    right: 0;
+    margin-right: 60px;
+    width: 200px;
+    grid-column: 3;
+    grid-row: 2;
   }
 
   .h2-1 {
-    margin-top: 48px;
-    margin-left: 30px;
-    font-size: 25px;
+    margin-left: 50px;
+    grid-column: 2;
+    grid-row: 2;
   }
 
   .h2-2 {
-    margin-top: 50px;
-    margin-left: 80px;
-    font-size: 25px;
+    margin-left: 150px;
+    margin-top: 100px;
+    grid-column: 2;
+    grid-row: 2;
   }
 
   .h3-rol {
-    margin-top: 80px;
-    margin-left: 30px;
-    font-size: 20px;
+    margin-left: 50px;
+    grid-column: 2;
+    grid-row: 2;
   }
 
   .datosP {
     height: 70%;
-    width: 100%;
-    margin: -30px 0px 0px;
-    font-size: 13px;
-  }
-
-  .p-resultado {
-    margin-left: 150px;
-  }
-
-  .p-resultado-i {
-    margin-left: 150px;
+    grid-column: 2;
+    grid-row: 4;
+    margin: -30px 0px 0px 50px;
   }
 
   .dato-intp {
@@ -305,100 +265,68 @@
 
   .imgM {
     width: 80%;
+    grid-column: 2;
+    grid-row: 3;
+    margin: auto;
+  }
+
+  /*div social*/
+
+  .social-icons img {
+    height: 50px;
+  }
+
+  .fmain a {
+    font-size: 50px;
   }
 
   /*Acerca de mi*/
-  .div-1ac {
-    display: grid;
-    grid-template-columns: 0.1fr 4fr 0.1fr;
-  }
-
-  .div-2ac {
-    display: grid;
-    grid-template-columns: 0.1fr 4fr 0.1fr;
-  }
 
   .h2-1ac {
     font-size: 30px;
-    grid-column: 2;
-    grid-row: 1;
+  }
+
+  .divInt-1ac {
+    margin: 150px 20px auto;
   }
 
   .img-1ac {
     margin: 150px auto 0px;
-    grid-column: 2;
-    grid-row: 1;
   }
 
-  .divInt-1ac {
-    margin: 400px 0px auto;
-    font-size: 13px;
-    grid-column: 2;
-    grid-row: 1;
+  .divInt-2ac {
+    margin: 120px 20px auto;
   }
 
   .h2-2ac {
     font-size: 30px;
-    margin-top: 20px;
-    grid-column: 2;
-    grid-row: 1;
+    margin-top: 50px;
   }
 
-  .img-2ac {
-    margin: 90px auto 0px;
-    grid-column: 2;
-    grid-row: 1;
+  .divInt-3ac {
+    margin: 120px 20px auto;
   }
-  .divInt-2ac {
-    margin: 320px 0px auto;
-    font-size: 13px;
-    grid-column: 2;
-    grid-row: 1;
-  }
+
   .h2-3ac {
     font-size: 30px;
-    margin-top: 20px;
-    grid-column: 2;
-    grid-row: 1;
-  }
-  .img-3ac {
-    margin: 90px auto 0px;
-    grid-column: 2;
-    grid-row: 1;
-  }
-  .divInt-3ac {
-    margin: 420px 20px auto;
-    font-size: 13px;
-    grid-column: 2;
-    grid-row: 1;
+    margin-top: 50px;
   }
 
   /*Educacion*/
 
   .hab {
-    margin: 10px auto 0px;
+    margin: 100px auto 0px;
     font-size: 35px;
   }
   .div-p p {
-    margin: 20px 0px;
-    font-size: 13px;
+    margin: 30px 20px;
   }
 
   .table-1 {
-    margin-top: 20px;
-  }
-
-  .table-1 h2 {
-    font-size: 18px;
-  }
-
-  .div-est1 img {
-    width: 40px;
-    margin: 10px 0px;
+    margin-top: 30px;
   }
 
   .div-est1 {
-    font-size: 13px;
     padding: 10px;
     background-color: #27262c;
     border-radius: 10px;
@@ -408,85 +336,77 @@
 
   .div-1po {
     display: grid;
-    grid-template-rows: 0.1fr 2.1fr 1fr;
+    grid-template-columns: 0fr 4fr 0fr;
+    grid-template-rows: 0.1fr 3.1fr 1fr;
   }
 
   .div-2po {
     display: grid;
-    grid-template-rows: 0.1fr 1.3fr 1fr;
+    grid-template-columns: 0fr 4fr 0fr;
+    grid-template-rows: 0.1fr 2fr 1fr;
   }
 
   .h2-1po {
-    font-size: 25px;
-    margin: 65px 0px 0px;
+    font-size: 30px;
+    margin-top: 40px;
+    margin-left: 10px;
+    grid-column: 2;
     grid-row: 1;
-    background-color: blue;
   }
-
-  .img-1po {
-    width: 350px;
-    height: 250px;
-    background-position: 0px -30px;
-    background-size: 370px 280px;
-    margin: 20px 0px;
-    grid-row: 2;
-  }
-
   .div-button-blog {
+    grid-column: 2;
     grid-row: 2;
-    margin-left: 3px;
+    margin-left: 70px;
+  }
+  .img-1po {
+    width: 500px;
+    height: 400px;
+    margin: 20px 0px 25px;
   }
 
   .button-blog {
-    grid-row: 2;
-    position: absolute;
-    margin: 0px 120px;
+    margin: 0px 200px;
   }
 
   .divInt-1po {
     height: 140px;
     width: 100%;
+    grid-column: 2;
     grid-row: 3;
-    font-size: 13px;
     margin: 10px 0px 10px;
   }
 
   .Utilizado {
-    margin: 15px 5px;
-    width: 28%;
+    margin: 20px 20px;
+    width: 25%;
   }
 
   .h2-2po {
-    font-size: 25px;
-    margin: 15px 0px 0px;
+    font-size: 30px;
+    margin: 40px 10px 0px;
+    grid-column: 2;
     grid-row: 1;
   }
 
-  .img-2po {
-    width: 350px;
-    height: 250px;
-    margin: 20px 0px;
-    background-position: 0px -8px;
-    background-size: 370px 280px;
-    grid-row: 2;
-  }
-
   .divInt-2po {
-    height: 240px;
-    width: 100%;
+    grid-column: 2;
     grid-row: 3;
-    font-size: 13px;
+    width: 100%;
     margin: 10px 0px 10px;
   }
 
   .div-button-votante {
+    grid-column: 2;
     grid-row: 2;
-    margin-left: 3px;
+    margin-left: 47px;
+  }
+
+  .img-2po {
+    margin: 20px 0px 25px;
   }
 
   .button-vot {
-    position: absolute;
-    margin: 0px 120px;
+    margin: 0px 200px;
   }
 }
 /* 720 x 1280*/
