@@ -414,7 +414,7 @@
 }
 
 /*393 x 873*/
-@media screen and (max-width: 1080px) {
+@media screen and (min-width: 393px) {
   .menu-checkbox {
     display: block;
     margin-top: 17px;
