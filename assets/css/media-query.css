@@ -178,6 +178,14 @@
 @media screen and (max-width: 1080px) {
   .menu-checkbox {
     display: block;
+    margin-top: 60px;
+    margin-right: 90px;
+  }
+
+  .btn-menu {
+    position: absolute;
+    width: 70px;
+    height: 70px;
   }
 
   .nav {
@@ -186,20 +194,25 @@
   }
 
   .nav-logo img {
-    margin-top: -50px;
-    margin-left: -10px;
-    width: 200px;
+    margin-top: -20px;
+    margin-left: 10px;
+    width: 230px;
+  }
+
+  .nav-back-i {
+    height: 150px;
+    margin-top: 15px;
   }
 
   /*Menu*/
 
   ul {
-    margin-top: 20px;
+    margin-top: 60px;
     margin-left: -10px;
   }
   li {
-    padding: 10px 5px;
-    font-size: 20px;
+    padding: 0px 5px;
+    font-size: 35px;
   }
 
   /*Main index*/
@@ -210,6 +223,11 @@
     grid-template-rows: 0.3fr 4fr 0.6fr;
   }
 
+  .body {
+    background-image: url("../img/fondo.gif");
+    background-size: cover;
+    background-attachment: fixed;
+  }
   /*Main*/
 
   .home-main {
@@ -220,62 +238,76 @@
 
   .main-presentacion {
     grid-template-columns: 0.5fr 4fr 0.5fr;
-    grid-template-rows: 0.1fr 1fr 2fr 1.5fr 0.3fr;
+    grid-template-rows: 0.1fr 0.7fr 2fr 1.5fr 0.3fr;
   }
 
   .imghello {
     right: 0;
-    margin-right: 60px;
-    width: 200px;
+    margin: 80px 180px 0px 0px;
+    width: 250px;
     grid-column: 3;
     grid-row: 2;
   }
 
   .h2-1 {
-    margin-left: 50px;
+    margin: 180px 0px 0px 50px;
+    font-size: 53px;
     grid-column: 2;
     grid-row: 2;
   }
 
   .h2-2 {
-    margin-left: 150px;
-    margin-top: 100px;
+    margin: 180px 0px 0px 150px;
+    font-size: 53px;
     grid-column: 2;
     grid-row: 2;
   }
 
   .h3-rol {
-    margin-left: 50px;
+    margin: 240px 0px 0px 50px;
+    font-size: 43px;
     grid-column: 2;
     grid-row: 2;
   }
-
-  .datosP {
-    height: 70%;
-    grid-column: 2;
-    grid-row: 4;
-    margin: -30px 0px 0px 50px;
-  }
-
-  .dato-intp {
-    margin-left: -20px;
-  }
-
   .imgM {
-    width: 80%;
+    width: 90%;
     grid-column: 2;
     grid-row: 3;
     margin: auto;
   }
 
+  .datosP {
+    height: 70%;
+    width: 100%;
+    grid-column: 2;
+    grid-row: 4;
+    margin: -170px 0px 0px 0px;
+    font-size: 30px;
+  }
+
+  .dato-intp {
+    margin-left: 10px;
+  }
+  .p-resultado {
+    margin-left: 280px;
+    font-size: 34px;
+  }
+
+  .p-resultado-i {
+    margin-left: 280px;
+    font-size: 34px;
+  }
+
   /*div social*/
 
   .social-icons img {
-    height: 50px;
+    height: 80px;
   }
-
+  .social-icons {
+    margin-left: -190px;
+  }
   .fmain a {
-    font-size: 50px;
+    font-size: 80px;
   }
 
   /*Acerca de mi*/
