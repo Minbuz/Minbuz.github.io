@@ -180,7 +180,7 @@
 */
 
 /* 720 x 1280*/
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 767px) {
   .menu-checkbox {
     display: block;
   }
@@ -414,7 +414,7 @@
 }
 
 /*393 x 873*/
-@media screen and (min-width: 393px) {
+@media screen and (min-width: 393px) and (max-width: 767px) {
   .menu-checkbox {
     display: block;
     margin-top: 17px;
@@ -433,7 +433,7 @@
   .nav-logo img {
     margin-top: 2px;
     margin-left: 3px;
-    width: 70px;
+    width: 70px;background-color: blue;
   }
 
   .nav-back-i {
