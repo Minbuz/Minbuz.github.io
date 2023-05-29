@@ -176,10 +176,10 @@
   }
 }
 
-/*prueba con 980 x 1840
+/*prueba con 980 x 1840  ----- 1080
 */
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1080px) {
   .menu-checkbox {
     display: block;
     margin-top: 60px;
