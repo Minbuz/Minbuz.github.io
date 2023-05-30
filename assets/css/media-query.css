@@ -176,8 +176,8 @@
   }
 }
 
-/*1080 x 2400*/ /*393 x 733*/
-@media screen and (max-width: 1080px) {
+/*1080 x 2400*/ /*393 x 733*/  /*384 727*/
+@media screen and (max-width: 384px) {
   /*Menu*/
   .menu-checkbox {
     display: block;
