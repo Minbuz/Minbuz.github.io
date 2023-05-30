@@ -178,7 +178,7 @@
 /*1080 x 2400*/ /*XIOMI - 393 x 733 quitar 720 para revisar-----------Arreglar portafolio y agregar certificados*/
 
 /* 720 x 1280*/
-@media screen and (max-width: 10px) {
+@media screen and (max-width: 720px) {
   .menu-checkbox {
     display: block;
   }
@@ -410,6 +410,7 @@
     margin: 0px 200px;
   }
 }
+/*393 x 733*/
 @media screen and (max-width: 393px) {
   /*Menu*/
   .menu-checkbox {
