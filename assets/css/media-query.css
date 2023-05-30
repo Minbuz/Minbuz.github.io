@@ -332,8 +332,8 @@
     height: 42px;
   }
 
-  .fmain{
-  height: 53px;
+  .fmain {
+    height: 53px;
   }
 
   /*Acerca de mi*/
@@ -518,11 +518,7 @@
   }
 }
 /*375 x 667*/
-@media screen and (max-width: 375px) {
-}
 
 /* 360 x 640*/
-@media screen and (max-width: 360px) {
-}
 
 /*1080 x 2400*/
