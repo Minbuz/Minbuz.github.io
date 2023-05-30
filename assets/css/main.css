@@ -41,7 +41,7 @@ a {
 /*menu*/
 .menu-checkbox {
   display: none;
-  position: absolute;
+  position: fixed;
   margin-top: 54px;
   margin-right: 20px;
   right: 0;
