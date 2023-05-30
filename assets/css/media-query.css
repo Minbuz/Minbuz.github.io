@@ -178,7 +178,7 @@
 /* 720 x 1280*/
 
 /*1080 x 2400*/ /*393 x 733*/
-@media screen and (min-width: 393px) and (max-width: 500px) {
+@media screen and (min-width: 500px) and (max-width: 900px) {
   /*Menu*/
   .menu-checkbox {
     display: block;
