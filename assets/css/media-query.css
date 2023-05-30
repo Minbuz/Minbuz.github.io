@@ -1,3 +1,26 @@
+#cont_escalable {
+  display: block;
+}
+@media only screen and (orientation: portrait) {
+  #cont_escalable {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  #cont_escalable {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
 /* 1440 x 900 X*/
 @media screen and (max-width: 1440px) {
   .menu-checkbox {
@@ -177,7 +200,7 @@
   }
 }
 /*1080 x 2400*/ /*XIOMI - 393 x 733 quitar 720 para revisar-----------Arreglar portafolio y agregar certificados*/
-@media screen and (max-width: 393px) {
+@media screen and (max-width: 1080px) {
   /*Menu*/
   .menu-checkbox {
     display: block;
@@ -563,7 +586,6 @@
     margin: 20px 0px;
     background-position: 0px -8px;
     background-size: 370px 280px;
-
   }
 
   .divInt-2po {
