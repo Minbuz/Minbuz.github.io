@@ -1,11 +1,4 @@
-/*Base 1920 x 1080*/
-
-@media screen and (max-width: 1920px) {
-  .menu-checkbox {
-    display: none;
-  }
-}
-/* 1440 x 900*/
+/* 1440 x 900 X*/
 @media screen and (max-width: 1440px) {
   .menu-checkbox {
     display: none;
@@ -82,6 +75,14 @@
     font-size: 40px;
   }
 
+  .div-1cert {
+    height: 270px;
+  }
+  .img-1cert {
+    width: 39%;
+    height: 39%;
+  }
+
   /*Portafolio*/
 
   .div-1po {
@@ -129,7 +130,7 @@
     margin: 10px 250px 10px;
   }
 }
-/* 1366 x 768*/
+/* 1366 x 768 X*/
 @media screen and (max-width: 1366px) {
   .menu-checkbox {
     display: none;
@@ -176,7 +177,7 @@
   }
 }
 /*1080 x 2400*/ /*XIOMI - 393 x 733 quitar 720 para revisar-----------Arreglar portafolio y agregar certificados*/
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 393px) {
   /*Menu*/
   .menu-checkbox {
     display: block;
@@ -244,7 +245,7 @@
   }
 
   .main-container {
-    padding-top: 10px;
+    padding-top: 0px;
     padding-bottom: 10px;
   }
 
@@ -335,12 +336,16 @@
   /*Acerca de mi*/
   .div-1ac {
     display: grid;
-    grid-template-columns: 0.1fr 4fr 0.1fr;
+    grid-template-columns: 0fr 4fr 0fr;
   }
 
   .div-2ac {
     display: grid;
-    grid-template-columns: 0.1fr 4fr 0.1fr;
+    grid-template-columns: 0fr 4fr 0fr;
+  }
+
+  .p-1ac {
+    width: 100%;
   }
 
   .h2-1ac {
@@ -392,7 +397,7 @@
     grid-row: 1;
   }
   .divInt-3ac {
-    margin: 420px 20px auto;
+    margin: 420px 00px auto;
     font-size: 13px;
     grid-column: 2;
     grid-row: 1;
@@ -401,25 +406,31 @@
   /*Educacion*/
 
   .hab {
-    margin: 10px auto 0px;
+    margin: 100px auto 0px;
+    font-size: 35px;
+  }
+
+  .hab1 {
+    margin: 30px auto 0px;
     font-size: 35px;
   }
   .div-p p {
-    margin: 20px 0px;
+    margin-top: 20px;
     font-size: 13px;
   }
 
   .table-1 {
     margin-top: 20px;
+    width: 100%;
   }
 
   .table-1 h2 {
-    font-size: 18px;
+    font-size: 17px;
   }
 
   .div-est1 img {
-    width: 40px;
-    margin: 10px 0px;
+    width: 30px;
+    margin: 0px;
   }
 
   .div-est1 {
@@ -429,22 +440,79 @@
     border-radius: 10px;
   }
 
+  .div-1cert {
+    margin-top: 20px;
+    height: 200px;
+    font-size: 10px;
+    grid-template-columns: 0.1fr 4fr 0.1fr;
+    grid-template-rows: 0.1fr 3fr;
+  }
+
+  .divInt-1cert {
+    grid-column: 2;
+    grid-row: 1;
+    padding: 10px 0px 0px 10px;
+  }
+
+  .h2-1cert {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .p-1cert {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .p-12cert {
+    grid-column: 2;
+    grid-row: 1;
+    margin-bottom: 0px;
+  }
+
+  .img-1cert {
+    width: 20%;
+    height: 54%;
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .div-button-cert1 {
+    grid-column: 2;
+    grid-row: 2;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .button-cert1 {
+    font-size: 13px;
+    padding: 5px 8px;
+    margin-top: 10px;
+  }
+
+  .Utilizado-cert {
+    display: none;
+  }
+
   /*Portafolio*/
 
   .div-1po {
     display: grid;
-    grid-template-rows: 0.1fr 2.1fr 1fr;
+    grid-template-columns: 0.1fr 4fr 1fr;
+    grid-template-rows: 0.6fr 0.1fr 2fr 1fr;
   }
 
   .div-2po {
     display: grid;
-    grid-template-rows: 0.1fr 1.3fr 1fr;
+    grid-template-columns: 0.1fr 4fr 1fr;
+    grid-template-rows: 0.12fr 0.1fr 1.3fr 1fr;
   }
 
   .h2-1po {
     font-size: 25px;
-    margin: 65px 0px 0px;
-    grid-row: 1;
+    margin: 0px;
+    grid-column: 2;
+    grid-row: 2;
   }
 
   .img-1po {
@@ -452,17 +520,18 @@
     height: 250px;
     background-position: 0px -30px;
     background-size: 370px 280px;
-    margin: 20px 0px;
-    grid-row: 2;
+    margin: 10px 0px;
+    grid-column: 2;
+    grid-row: 3;
   }
 
   .div-button-blog {
-    grid-row: 2;
+    grid-column: 2;
+    grid-row: 3;
     margin-left: 3px;
   }
 
   .button-blog {
-    grid-row: 2;
     position: absolute;
     margin: 0px 120px;
   }
@@ -470,7 +539,8 @@
   .divInt-1po {
     height: 140px;
     width: 100%;
-    grid-row: 3;
+    grid-column: 2;
+    grid-row: 4;
     font-size: 13px;
     margin: 10px 0px 10px;
   }
@@ -482,8 +552,9 @@
 
   .h2-2po {
     font-size: 25px;
-    margin: 15px 0px 0px;
-    grid-row: 1;
+    margin: 0px;
+    grid-column: 2;
+    grid-row: 2;
   }
 
   .img-2po {
@@ -492,19 +563,21 @@
     margin: 20px 0px;
     background-position: 0px -8px;
     background-size: 370px 280px;
-    grid-row: 2;
+
   }
 
   .divInt-2po {
     height: 240px;
     width: 100%;
-    grid-row: 3;
+    grid-column: 2;
     font-size: 13px;
     margin: 10px 0px 10px;
+    grid-row: 4;
   }
 
   .div-button-votante {
-    grid-row: 2;
+    grid-column: 2;
+    grid-row: 3;
     margin-left: 3px;
   }
 
@@ -746,6 +819,7 @@
     margin: 0px 200px;
   }
 }
+/*430px × 932px*/
 /*393 x 733*/
 
 /*384 727*/
