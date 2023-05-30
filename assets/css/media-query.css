@@ -175,9 +175,10 @@
     margin-top: 20px;
   }
 }
+/* 720 x 1280*/
 
 /*1080 x 2400*/ /*393 x 733*/
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 393px) {
   /*Menu*/
   .menu-checkbox {
     display: block;
