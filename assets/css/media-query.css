@@ -1183,7 +1183,7 @@
   }
 }
 /* 720 x 1280 -------------------------------------*/
-@media screen and (max-width: 70px) and (orientation: PORTRAIT) {
+@media screen and (max-width: 720px) and (orientation: PORTRAIT) {
   /*Menu*/
   .menu-checkbox {
     display: block;
@@ -1666,7 +1666,7 @@
     margin: 280px 0px;
   }
 }
-@media screen and (max-width: 10px) and (orientation: LANDSCAPE) {
+@media screen and (max-width: 1280px) and (orientation: LANDSCAPE) {
   /*Menu*/
   .menu-checkbox {
     display: block;
