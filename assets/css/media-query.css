@@ -289,7 +289,7 @@
   }
 }
 /*1080 x 2400*/ /*XIOMI - 393 x 733 quitar 720 para revisar PORTRAIT VERTICAL - LANDSCAPE HORIZONTAL*/
-@media screen and (max-width: 360px) and (orientation: PORTRAIT) /*393 VERTICAL*/ {
+@media screen and (max-width: 400px) and (orientation: PORTRAIT) /*393 VERTICAL*/ {
   /*Menu*/
   .menu-checkbox {
     display: block;
