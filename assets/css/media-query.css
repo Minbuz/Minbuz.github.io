@@ -176,8 +176,8 @@
     margin-top: 20px;
   }
 }
-/*1080 x 2400*/ /*XIOMI - 393 x 733 quitar 720 para revisar-----------Arreglar portafolio y agregar certificados*/
-@media screen and (max-width: 393px) and (orientation: portrait) {
+/*1080 x 2400*/ /*XIOMI - 393 x 733 quitar 720 para revisar*/
+@media screen and (max-width: 1080px) and (orientation: portrait) {
   /*Menu*/
   .menu-checkbox {
     display: block;
@@ -585,8 +585,8 @@
     margin: 0px 120px;
   }
 }
-
-@media screen and (max-width: 733px) and (orientation: landscape) {
+/*XIOMI -733 x 393 quitar 720 para revisar*/
+@media screen and (max-width: 2400px) and (orientation: landscape) {
   /*Menu*/
   .menu-checkbox {
     display: block;
