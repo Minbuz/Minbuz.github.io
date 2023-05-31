@@ -289,7 +289,7 @@
   }
 }
 /*1080 x 2400*/ /*XIOMI - 393 x 733 quitar 720 para revisar PORTRAIT VERTICAL - LANDSCAPE HORIZONTAL*/
-@media screen and (max-width: 393px) and (orientation: PORTRAIT) /*393 VERTICAL*/ {
+@media screen and (max-width: 360px) and (orientation: PORTRAIT) /*393 VERTICAL*/ {
   /*Menu*/
   .menu-checkbox {
     display: block;
@@ -698,7 +698,7 @@
   }
 }
 /*XIOMI -733 x 393 quitar 720 para revisar*/
-@media screen and (max-width: 733px) and (orientation: LANDSCAPE) /*733 HORIZONTAL*/ {
+@media screen and (max-width: 800px) and (orientation: LANDSCAPE) /*733 HORIZONTAL*/ {
   /*Menu*/
   .menu-checkbox {
     display: block;
