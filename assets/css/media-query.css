@@ -366,7 +366,7 @@
   .main-presentacion {
     grid-template-columns: 0.2fr 4fr 0.2fr;
     grid-template-rows: 0.1fr 0.4fr 1fr 0.7fr 0.3fr;
-    background-color: #3473a9;
+    background-color: #a93490;
   }
 
   .imghello {
