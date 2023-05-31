@@ -289,7 +289,7 @@
   }
 }
 /*1080 x 2400*/ /*XIOMI - 393 x 733 quitar 720 para revisar PORTRAIT VERTICAL - LANDSCAPE HORIZONTAL*/
-@media screen and (max-width: 500px) and (orientation: PORTRAIT) /*393 VERTICAL*/ {
+@media screen and (max-width: 450px) and (orientation: PORTRAIT) /*393 VERTICAL*/ {
   /*Menu*/
   .menu-checkbox {
     display: block;
@@ -365,7 +365,7 @@
 
   .main-presentacion {
     grid-template-columns: 0.2fr 4fr 0.2fr;
-    grid-template-rows: 0.1fr 0.4fr 1fr 0.7fr 0.3fr;
+    grid-template-rows: 0.1fr 0.4fr 1fr 0.7fr 0.3fr;background-color: #3473a9;
   }
 
   .imghello {
