@@ -366,7 +366,7 @@
   .main-presentacion {
     grid-template-columns: 0.2fr 4fr 0.2fr;
     grid-template-rows: 0.1fr 0.4fr 1fr 0.7fr 0.3fr;
-    background-color: #a93490;
+    background-color: #0004ff;
   }
 
   .imghello {
@@ -1183,7 +1183,7 @@
   }
 }
 /* 720 x 1280 -------------------------------------*/
-@media screen and (max-width: 720px) and (orientation: PORTRAIT) {
+@media screen and (max-width: 720px) and (orientation: PORTRAIT) /*393 VERTICAL*/ {
   /*Menu*/
   .menu-checkbox {
     display: block;
@@ -1239,9 +1239,9 @@
   /*Main index*/
 
   .home-main-i {
-    grid-template-columns: 0.3fr 4fr 0.3fr;
-    grid-template-rows: 0.7fr 4fr 0fr;
-    position: initial;
+    margin-top: 80px;
+    grid-template-columns: 0.2fr 5fr 0.2fr;
+    grid-template-rows: 0fr 4fr 0.7fr;
   }
 
   /*Main*/
@@ -1259,12 +1259,13 @@
 
   .main-presentacion {
     grid-template-columns: 0.2fr 4fr 0.2fr;
-    grid-template-rows: 0.2fr 0.5fr 2fr 1.2fr 0.4fr;
+    grid-template-rows: 0.1fr 0.4fr 1fr 0.7fr 0.3fr;
+    background-color: #a93490;
   }
 
   .imghello {
     position: absolute;
-    margin: 0px 270px 0px 0px;
+    margin: 0px 30px 0px 0px;
     right: 0;
     width: 100px;
     grid-row: 2;
@@ -1295,13 +1296,13 @@
     grid-column: 2;
   }
   .imgM {
-    width: 60%;
+    width: 70%;
     grid-row: 3;
     grid-column: 2;
   }
 
   .datosP {
-    height: 90%;
+    height: 100%;
     width: 100%;
     margin: 0px;
     font-size: 13px;
@@ -1329,15 +1330,14 @@
   }
   .social-icons {
     width: 80px;
-    margin-left: -120px;
   }
 
   .social-icons img {
-    height: 46px;
+    height: 42px;
   }
 
   .fmain {
-    height: 64px;
+    height: 53px;
   }
 
   /*Acerca de mi*/
@@ -1363,8 +1363,6 @@
 
   .img-1ac {
     margin: 150px auto 0px;
-    height: 45%;
-    width: 45%;
     grid-column: 2;
     grid-row: 1;
   }
@@ -1385,8 +1383,6 @@
 
   .img-2ac {
     margin: 90px auto 0px;
-    height: 45%;
-    width: 45%;
     grid-column: 2;
     grid-row: 1;
   }
@@ -1404,13 +1400,11 @@
   }
   .img-3ac {
     margin: 90px auto 0px;
-    height: 55%;
-    width: 45%;
     grid-column: 2;
     grid-row: 1;
   }
   .divInt-3ac {
-    margin: 400px 00px auto;
+    margin: 420px 00px auto;
     font-size: 13px;
     grid-column: 2;
     grid-row: 1;
@@ -1433,7 +1427,7 @@
   }
 
   .table-1 {
-    margin-top: -70px;
+    margin-top: 20px;
     width: 100%;
   }
 
@@ -1454,131 +1448,70 @@
   }
 
   .div-1cert {
-    margin-top: 50px;
-    display: grid;
-    height: 260px;
-    grid-template-columns: 0.1fr 4fr 1fr 0.1fr;
-    grid-template-rows: 0.5fr 8fr 0.5fr;
-    background-color: #27262c;
-    border: 1px solid rgb(206, 206, 206);
-    border-radius: 20px;
-    border-style: ridge;
-  }
-
-  .div-cert-pos {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    opacity: 70%;
-  }
-
-  .div-1cert {
-    margin-top: 50px;
-    display: grid;
-    height: 260px;
-    grid-template-columns: 0.1fr 4fr 1fr 0.1fr;
-    grid-template-rows: 0.5fr 8fr 0.5fr;
-    background-color: #27262c;
-    border: 1px solid rgb(206, 206, 206);
-    border-radius: 20px;
-    border-style: ridge;
-  }
-
-  .div-cert-pos {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    opacity: 70%;
+    margin-top: 20px;
+    height: 200px;
+    font-size: 10px;
+    grid-template-columns: 0.1fr 4fr 0.1fr;
+    grid-template-rows: 0.1fr 3fr;
   }
 
   .divInt-1cert {
     grid-column: 2;
-    grid-row: 2;
-    padding: 20px;
-    border-radius: 10px;
+    grid-row: 1;
+    padding: 10px 0px 0px 10px;
   }
 
   .h2-1cert {
-    color: white;
     grid-column: 2;
-    grid-row: 2;
+    grid-row: 1;
   }
 
   .p-1cert {
-    color: white;
-    text-align: justify;
     grid-column: 2;
-    grid-row: 2;
+    grid-row: 1;
   }
   .p-12cert {
-    color: white;
-    text-align: justify;
     grid-column: 2;
-    grid-row: 2;
-    margin-bottom: 20px;
+    grid-row: 1;
+    margin-bottom: 0px;
   }
 
   .img-1cert {
-    width: 70%;
-    height: 43%;
-    grid-column: 3;
+    width: 20%;
+    height: 54%;
+    grid-column: 2;
     grid-row: 2;
   }
 
   .div-button-cert1 {
-    grid-column: 3;
+    grid-column: 2;
     grid-row: 2;
-    display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
   }
 
   .button-cert1 {
-    background-color: #3473a9;
-    font-size: 18px;
-    font-weight: bold;
-    color: black;
-    padding: 5px 10px;
-    margin-top: 20px;
-    border-radius: 6px;
-    border: 2px solid transparent;
-    transition: background-color 0.3s ease;
-  }
-
-  .button-cert1:hover {
-    text-shadow: 0 -1px 0 #000000;
-    background-color: #4996da;
+    font-size: 13px;
+    padding: 5px 8px;
+    margin-top: 10px;
   }
 
   .Utilizado-cert {
-    margin: 10px 20px 0px 0px;
-    width: 26%;
-    background-color: #4996da;
-    border-radius: 10px;
-    display: inline-block;
-    cursor: default;
-  }
-
-  .Utilizado-cert p {
-    color: black;
-    font-weight: bold;
-    margin: 0;
-    display: flex;
-    justify-content: center;
+    display: none;
   }
 
   /*Portafolio*/
 
   .div-1po {
     display: grid;
-    grid-template-columns: 0.1fr 4fr 0.1fr;
+    grid-template-columns: 0.1fr 4fr 1fr;
     grid-template-rows: 0.6fr 0.1fr 2fr 1fr;
   }
 
   .div-2po {
     display: grid;
-    grid-template-columns: 0.1fr 4fr 0.1fr;
+    grid-template-columns: 0.1fr 4fr 1fr;
     grid-template-rows: 0.12fr 0.1fr 1.3fr 1fr;
   }
 
@@ -1602,25 +1535,21 @@
   .div-button-blog {
     grid-column: 2;
     grid-row: 3;
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
+    margin-left: 3px;
   }
 
   .button-blog {
     position: absolute;
-    margin: 270px 0px;
+    margin: 0px 120px;
   }
 
   .divInt-1po {
-    height: 120px;
+    height: 140px;
     width: 100%;
     grid-column: 2;
     grid-row: 4;
     font-size: 13px;
-    margin: 33px 0px 10px;
+    margin: 10px 0px 10px;
   }
 
   .Utilizado {
@@ -1644,29 +1573,27 @@
   }
 
   .divInt-2po {
-    height: 170px;
+    height: 240px;
     width: 100%;
     grid-column: 2;
     font-size: 13px;
-    margin: 50px 0px 10px;
+    margin: 10px 0px 10px;
     grid-row: 4;
   }
 
   .div-button-votante {
     grid-column: 2;
     grid-row: 3;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
+    margin-left: 3px;
   }
 
   .button-vot {
     position: absolute;
-    margin: 280px 0px;
+    margin: 0px 120px;
   }
 }
-@media screen and (max-width: 1280px) and (orientation: LANDSCAPE) {
+
+@media screen and (max-width: 1280px) and (orientation: LANDSCAPE) /*733 HORIZONTAL*/ {
   /*Menu*/
   .menu-checkbox {
     display: block;
