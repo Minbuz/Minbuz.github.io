@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Inicio</title><link rel="shortcut icon" href="assets/img/icono.ico" />
+    <title>Inicio</title>
+    <link rel="shortcut icon" href="assets/img/icono.ico" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/all.min.css" />
     <link rel="stylesheet" href="assets/css/media-query.css" />
@@ -13,10 +14,11 @@
   <body class="body">
     <header class="header">
       <div class="div-header">
+        <p class="menu-check1">Menu</p>
         <div class="menu-checkbox">
-          <input class="menuc" type="checkbox" id="menu-check" " />
           <label for="menu-check">
             <div class="btn-menu">
+              <input class="menuc" type="checkbox" id="menu-check" " />
               <div class="stick1"></div>
               <div class="stick2"></div>
               <div class="stick3"></div>
@@ -45,8 +47,10 @@
         <div class="main-presentacion-op"></div>
         <div class="main-presentacion">
           <img class="imghello" src="assets/img/helloworld.png" alt="" />
-          <h2 class="h2-1">Soy</h2>
-          <h2 class="h2-2">Juan Román</h2>
+          <h2 class="h2-1">
+            <span style="font-weight: lighter">Soy </span
+            ><span style="font-weight: bold">Juan Román</span>
+          </h2>
           <h3 class="h3-rol">Programador Fullstack</h3>
           <div class="datosP">
             <div class="dato-intp">
@@ -103,14 +107,24 @@
 <script>
   const menu = document.querySelector(".div-header");
   const menuItems = menu.querySelectorAll("nav");
+  const menuCheck1 = document.querySelector(".menu-check1");
+  const initialOffsetTop = menuCheck1.offsetTop;
+
   var estado = true;
-  if (window.innerWidth < 1366) {
+  if (window.innerWidth < 1000) {
     for (let i = 0; i < menuItems.length; i++) {
       menuItems[i].style.transform = "translateY(-40px)";
       menuItems[i].style.opacity = "0";
       estado = false;
     }
   }
+  window.addEventListener("scroll", function () {
+    if (window.pageYOffset >= initialOffsetTop) {
+      menuCheck1.style.display = "none";
+    } else {
+      menuCheck1.style.display = "block";
+    }
+  });
   function toggleMenu() {
     if (estado === false) {
       for (let i = 0; i < menuItems.length; i++) {
@@ -118,12 +132,16 @@
         menuItems[i].style.opacity = "1";
         estado = true;
       }
+      menuCheck1.style.opacity = "0";
+      menuCheck1.style.transform = "translateX(60px)";
     } else {
       for (let i = 0; i < menuItems.length; i++) {
         menuItems[i].style.transform = "translateY(-40px)";
         menuItems[i].style.opacity = "0";
         estado = false;
       }
+      menuCheck1.style.opacity = "1";
+      menuCheck1.style.transform = "translateX(0px)";
     }
   }
 

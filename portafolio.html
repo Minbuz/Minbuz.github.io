@@ -14,10 +14,11 @@
   <body class="body">
     <header class="header">
       <div class="div-header">
+        <p class="menu-check1">Menu</p>
         <div class="menu-checkbox">
-          <input class="menuc" type="checkbox" id="menu-check" />
           <label for="menu-check">
             <div class="btn-menu">
+              <input class="menuc" type="checkbox" id="menu-check" " />
               <div class="stick1"></div>
               <div class="stick2"></div>
               <div class="stick3"></div>
@@ -57,7 +58,7 @@
             </div>
           </div>
           <div class="div-button-blog">
-            <div class="img-1po" alt=""></div>
+            <img class="img-1po" alt="" src="./assets/img/blog.png" />
             <a
               class="button-blog"
               href="https://github.com/Minbuz/Mi-Blog-Proyecto"
@@ -69,7 +70,7 @@
         <hr />
         <article class="div-2po">
           <div class="div-button-votante">
-            <div class="img-2po" src="" alt=""></div>
+            <img class="img-2po" alt="" src="./assets/img/votantes.png" />
             <a
               class="button-vot"
               href="https://github.com/Minbuz/Sistema-Votantes"
@@ -103,14 +104,24 @@
 <script>
   const menu = document.querySelector(".div-header");
   const menuItems = menu.querySelectorAll("nav");
+  const menuCheck1 = document.querySelector(".menu-check1");
+  const initialOffsetTop = menuCheck1.offsetTop;
+
   var estado = true;
-  if (window.innerWidth < 1366) {
+  if (window.innerWidth < 1000) {
     for (let i = 0; i < menuItems.length; i++) {
       menuItems[i].style.transform = "translateY(-40px)";
       menuItems[i].style.opacity = "0";
       estado = false;
     }
   }
+  window.addEventListener("scroll", function () {
+    if (window.pageYOffset >= initialOffsetTop) {
+      menuCheck1.style.display = "none";
+    } else {
+      menuCheck1.style.display = "block";
+    }
+  });
   function toggleMenu() {
     if (estado === false) {
       for (let i = 0; i < menuItems.length; i++) {
@@ -118,12 +129,16 @@
         menuItems[i].style.opacity = "1";
         estado = true;
       }
+      menuCheck1.style.opacity = "0";
+      menuCheck1.style.transform = "translateX(60px)";
     } else {
       for (let i = 0; i < menuItems.length; i++) {
         menuItems[i].style.transform = "translateY(-40px)";
         menuItems[i].style.opacity = "0";
         estado = false;
       }
+      menuCheck1.style.opacity = "1";
+      menuCheck1.style.transform = "translateX(0px)";
     }
   }
 
