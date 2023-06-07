@@ -1,14 +1,23 @@
 @media only screen and (max-width: 1600px) {
+  .nav-logo img {
+    margin-top: -1.25vw;
+  }
+
   ul {
-    margin-top: 15px;
+    margin-top: 10px;
   }
 }
 
 @media only screen and (max-width: 1440px) {
-  /*pondria los cambios aca, si tuviera alguno*/
+  .nav-logo img {
+    margin-top: -1.3vw;
+  }
+  .div-1cert {
+    height: 12%;
+  }
 }
 
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 1281px) {
   .home-main {
     grid-template-columns: 0.3fr 4fr 0.3fr;
   }
@@ -37,14 +46,6 @@
   .p-resultado-i {
     margin-left: 170px;
   }
-
-  .img-1po {
-    width: 80%;
-    height: 100%;
-  }
-  .div-1po {
-    grid-template-columns: 2fr 0fr 0.4fr;
-  }
 }
 /*720 x 1280*/
 @media screen and (min-width: 720px) and (max-width: 1279px) {
@@ -52,9 +53,10 @@
     display: block;
     margin-top: 3.7vw;
   }
-
   .menu-check1 {
     display: block;
+    margin-top: 45px;
+    font-size: 3vw;
   }
   .btn-menu {
     width: 50px;
@@ -84,8 +86,7 @@
 
   li:hover {
     border-bottom: 1px solid white;
-    border-radius: 4px;
-    padding: 1px;
+    padding: 0px;
   }
 
   li:hover:before {
@@ -97,12 +98,6 @@
   }
 
   /*Main index*/
-
-  .body {
-    background-image: url("../img/fondo.gif");
-    background-repeat: repeat;
-    background-attachment: fixed;
-  }
 
   .home-main-i {
     grid-template-columns: 0.3fr 4fr 0.3fr;
@@ -272,7 +267,7 @@
   }
 
   .h2-1ac {
-    font-size: 5vw;
+    font-size: 4.5vw;
     grid-column: 2;
     grid-row: 1;
   }
@@ -288,18 +283,18 @@
   .divInt-1ac {
     margin: 0px;
     width: 100%;
-    height: 100%;
+    height: 70%;
     grid-column: 2;
     grid-row: 3;
   }
   .p-1ac {
-    font-size: 2.5vw;
+    font-size: 2vw;
     height: auto;
   }
 
   .h2-2ac {
     margin: 0px 0px 10px;
-    font-size: 5vw;
+    font-size: 4.5vw;
     grid-column: 2;
     grid-row: 1;
   }
@@ -314,13 +309,13 @@
   .divInt-2ac {
     margin: 0px;
     width: 100%;
-    height: 100%;
+    height: 70%;
     grid-column: 2;
     grid-row: 3;
   }
   .h2-3ac {
     margin: 0px;
-    font-size: 5vw;
+    font-size: 4.5vw;
     margin-top: 20px;
     grid-column: 2;
     grid-row: 1;
@@ -335,7 +330,7 @@
   .divInt-3ac {
     margin: 0px;
     width: 100%;
-    height: 100%;
+    height: 70%;
     grid-column: 2;
     grid-row: 3;
   }
@@ -344,16 +339,16 @@
 
   .hab {
     margin: 100px auto 0px;
-    font-size: 5vw;
+    font-size: 4.5vw;
   }
 
   .hab1 {
     margin: 30px auto 0px;
-    font-size: 5vw;
+    font-size: 4.5vw;
   }
   .div-p p {
     margin-top: 20px;
-    font-size: 3vw;
+    font-size: 2vw;
   }
 
   .table-1 {
@@ -386,7 +381,7 @@
   .div-1cert {
     margin-top: 50px;
     display: grid;
-    height: 260px;
+    height: 14%;
     grid-template-columns: 0.1fr 4fr 1fr 0.1fr;
     grid-template-rows: 0.5fr 8fr 0.5fr;
     background-color: #27262c;
@@ -417,14 +412,14 @@
   }
 
   .p-1cert {
-    font-size: 2.5vw;
+    font-size: 2.3vw;
     color: white;
     text-align: justify;
     grid-column: 2;
     grid-row: 2;
   }
   .p-12cert {
-    font-size: 2.4vw;
+    font-size: 2.2vw;
     color: white;
     text-align: justify;
     grid-column: 2;
@@ -433,8 +428,8 @@
   }
 
   .img-1cert {
-    width: 70%;
-    height: 43%;
+    position: relative;
+    width: 50%;
     grid-column: 3;
     grid-row: 2;
   }
@@ -500,7 +495,7 @@
   }
 
   .h2-1po {
-    font-size: 5vw;
+    font-size: 4.5vw;
     margin: 0px;
     grid-column: 2;
     grid-row: 2;
@@ -538,17 +533,19 @@
   .p-1po {
     color: white;
     text-align: justify;
-    font-size: 2.5vw;
+    font-size: 2vw;
   }
 
   .Utilizado {
     margin: 15px 5px;
-    font-size: 2.5vw;
-    width: 28%;
+    font-size: 2.2vw;
+    width: calc(32% - 10px);
+    display: inline-block;
+    box-sizing: border-box;
   }
 
   .h2-2po {
-    font-size: 5vw;
+    font-size: 4.5vw;
     margin: 0px;
     grid-column: 2;
     grid-row: 2;
@@ -563,7 +560,7 @@
   }
 
   .divInt-2po {
-    height: 100%;
+    height: 80%;
     width: 100%;
     grid-column: 2;
     font-size: 13px;
@@ -573,7 +570,7 @@
   .p-2po {
     color: white;
     text-align: justify;
-    font-size: 2.5vw;
+    font-size: 2vw;
   }
   .div-button-votante {
     grid-column: 2;
@@ -649,12 +646,6 @@
   }
 
   /*Main index*/
-
-  .body {
-    background-image: url("../img/fondocel.jpg");
-    background-repeat: repeat;
-    background-attachment: fixed;
-  }
 
   .home-main-i {
     grid-template-columns: 0.3fr 4fr 0.3fr;
@@ -936,7 +927,7 @@
   .div-1cert {
     margin-top: 50px;
     display: grid;
-    height: 260px;
+    height: 12%;
     grid-template-columns: 0.1fr 4fr 1fr 0.1fr;
     grid-template-rows: 0.5fr 8fr 0.5fr;
     background-color: #27262c;
@@ -983,8 +974,8 @@
   }
 
   .img-1cert {
-    width: 70%;
-    height: 43%;
+    position: relative;
+    width: 50%;
     grid-column: 3;
     grid-row: 2;
   }
@@ -1016,8 +1007,8 @@
   }
 
   .Utilizado-cert {
-    margin: 10px 20px 0px 0px;
-    width: 27%;
+    margin: 10px 0px 0px 0px;
+    width: calc(33% - 10px);
     background-color: #4996da;
     border-radius: 10px;
     display: inline-block;
@@ -1394,6 +1385,10 @@
     margin-top: 9px;
     height: 100%;
   }
+
+  li:hover {
+    border-bottom: 0px solid white;
+  }
 }
 
 /*375 x 667*/
@@ -1401,6 +1396,25 @@
 }
 /*360 x 640*/
 @media screen and (max-width: 358px) {
+
+  /**REVISAR CHECKBOX*/
+  .menu-checkbox {
+    margin-top: 4vw;
+    margin-right: 5px;
+    right: 0;
+  }
+  .menu-check1 {
+    margin-top: 35px;
+    margin-right: 80px;
+    right: 0;
+    font-size: 4vw;
+  }
+  .nav-back-i {
+    margin-top: 10px;
+    opacity: 90%;
+    height: 80%;
+  }
+
   .div-1po {
     display: grid;
     grid-template-columns: 0.1fr 4fr 0.1fr;

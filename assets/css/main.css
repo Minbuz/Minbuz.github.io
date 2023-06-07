@@ -9,12 +9,10 @@
 
 /*Body*/
 
-body {
+body,
+html {
   font-family: "Roboto Mono";
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
+  margin: 0;
 }
 
 hr {
@@ -170,7 +168,7 @@ li {
   cursor: pointer;
   min-width: 80px;
   margin: 10px;
-  margin-left: 20px;
+  margin-left: 35px;
   font-size: 2vw;
 }
 
@@ -216,12 +214,18 @@ li:active {
   }
 }
 
+#particle-canvas {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to bottom, #3078b8 0%, #0a0a32 100%);
+  vertical-align: middle;
+  position: fixed;
+  z-index: -3;
+}
 /*Main index*/
 
 .body {
-  background-image: url("../img/fondo.gif");
-  background-repeat: repeat;
-  background-attachment: fixed;
+  background-color: #000000;
 }
 
 .home-main-i {
@@ -604,7 +608,7 @@ li:active {
 }
 
 .img-1cert {
-  width: 36%;
+  width: 40%;
   grid-column: 3;
   grid-row: 2;
   object-fit: cover;
@@ -717,6 +721,8 @@ li:active {
   display: inline-block;
   cursor: default;
   font-size: 0.8vw;
+  width: calc(33% - 10px);
+  box-sizing: border-box;
 }
 
 .Utilizado p {
@@ -738,6 +744,7 @@ li:active {
   margin-top: 60px;
   grid-row: 2;
   grid-column: 2;
+  height: 60%;
   padding: 20px;
   background-color: #27262c;
   border-radius: 10px;
