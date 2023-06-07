@@ -1389,6 +1389,20 @@
   li:hover {
     border-bottom: 0px solid white;
   }
+  /*acerda mi*/
+
+  .h2-1ac {
+    margin-top: 74px;
+  }
+
+  /*estudios*/
+
+  .hab {
+    margin-top: 85px;
+  }
+  .h2-1po {
+    margin-top: 0px;
+  }
 }
 
 /*375 x 667*/
@@ -1398,13 +1412,13 @@
 @media screen and (max-width: 358px) {
   /**REVISAR CHECKBOX*/
   .menu-checkbox {
-    margin-top: 4vw;
+    margin-top: 6.1vw;
     margin-right: 5px;
     right: 0;
   }
   .menu-check1 {
     margin-top: 35px;
-    margin-right: 80px;
+    margin-right: 50px;
     right: 0;
     font-size: 4vw;
   }
@@ -1474,7 +1488,7 @@
     width: 80px;
     transition: transform 0.3s ease-in-out;
   }
-  
+
   ul {
     margin-left: 20px;
     margin-top: 3vw;
@@ -1486,7 +1500,7 @@
 
   .main-container {
     padding-bottom: 0px;
-    padding-top:0px;
+    padding-top: 0px;
   }
 
   /*div social*/
@@ -1512,7 +1526,38 @@
 
   /*estudios*/
 
-  .hab{
-  margin-top: 85px;
+  .hab {
+    margin-top: 85px;
+  }
+}
+@media screen and (max-width: 330px) {
+  .menu-checkbox {
+    margin-top: 6.7vw;
+  }
+  .menu-check1 {
+    display: block;
+    margin-top: 35px;
+    margin-right: 50px;
+  }
+
+  .btn-menu {
+    width: 35px;
+    height: 35px;
+  }
+
+  .nav-logo img {
+    margin-top: 0vw;
+    margin-left: 2vw;
+    width: 80px;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  ul {
+    margin-left: 10px;
+    margin-top: 3vw;
+  }
+  li {
+    margin-left: -8vw;
+    font-size: 3vw;
   }
 }
