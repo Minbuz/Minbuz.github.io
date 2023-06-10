@@ -6,6 +6,10 @@
   ul {
     margin-top: 10px;
   }
+
+  .home-main-i {
+    margin-top: 11%;
+  }
 }
 
 @media only screen and (max-width: 1440px) {
@@ -15,11 +19,29 @@
   .div-1cert {
     height: 12%;
   }
+  .home-main-i {
+    margin-top: 12%;
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  .home-main-i {
+    margin-top: 12%;
+  }
 }
 
 @media only screen and (max-width: 1281px) {
   .home-main {
     grid-template-columns: 0.3fr 4fr 0.3fr;
+  }
+
+  .home-main-i {
+    margin-top: 0%;
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 1.1fr 4fr 0.5fr;
+    position: fixed;
   }
 
   .nav {
